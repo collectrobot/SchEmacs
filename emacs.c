@@ -4,8 +4,8 @@
 #include <termios.h>
 #include <sys/ioctl.h>
 
-struct termios raw;
-struct winsize size;
+static struct termios raw;
+static struct winsize size;
 
 int raw_on(void)
 {
